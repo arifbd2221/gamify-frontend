@@ -40,7 +40,7 @@ export const PlayGame = () => {
               }
             axios.post("https://gamee-backend.herokuapp.com/api/v2/leaderboard/score", {
                 score: iframeData.score,
-                game: "amigoes"
+                game: "Boat Rush"
             }, {headers: headers})
             .then(resp => {
                 console.log(resp.data);
