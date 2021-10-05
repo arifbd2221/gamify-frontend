@@ -40,7 +40,7 @@
 
 .tableStyle{
   margin-left: 5%;
-  margin-right: 10%;
+  margin-right: 5%;
   text-align: center;
 }
 
@@ -53,11 +53,13 @@
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5%;
+  text-align: center;
 }
 
 .register{
   margin-left: 10%;
   margin-right: 10%;
+  text-align: center;
 }
 
 .not-register{
@@ -65,10 +67,23 @@
 }
 
 .b-logo{
-  width: 50%;
+  width: 90%;
   margin: 5%;
+  text-align: center;
 }
 
 .rl{
   width: 100%;
+}
+
+.loader-center{
+  text-align: center;
+}
+
+.error-margin-top{
+  margin-top: 10px;
+};
+
+.me{
+  background-color: #ff8126;
 }
