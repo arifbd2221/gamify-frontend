@@ -19,7 +19,7 @@ export const Login = () => {
     const handleFormSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
-        axios.post("http://localhost:8000/api/v2/account/token", {
+        axios.post("https://gamee-backend.herokuapp.com/api/v2/account/token", {
             username: phone,
             password: phone
         })

@@ -18,7 +18,7 @@ export const LeaderBoard = () => {
     const [user, setUser] = useState();
 
     useEffect(() => {
-        axios.get("http://localhost:8000/api/v2/leaderboard/list")
+        axios.get("https://gamee-backend.herokuapp.com/api/v2/leaderboard/list")
         .then(resp => {
             setPlayers(resp.data)
             setLoading(false);
@@ -34,7 +34,7 @@ export const LeaderBoard = () => {
                 'Content-Type': 'application/json',
                 'Authorization': `Token ${token}`
             }
-            axios.get("http://localhost:8000/api/v2/account/user", {headers: headers})
+            axios.get("https://gamee-backend.herokuapp.com/api/v2/account/user", {headers: headers})
             .then(resp => {
                 console.log(resp.data);
                 setUser(resp.data);

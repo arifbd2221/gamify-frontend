@@ -20,7 +20,7 @@ export const Register = () => {
     const handleFormSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
-        axios.post("http://localhost:8000/api/v2/account/register", {
+        axios.post("https://gamee-backend.herokuapp.com/api/v2/account/register", {
             fullname: fullname,
             phone: phone,
             password: phone

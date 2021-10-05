@@ -38,7 +38,7 @@ export const PlayGame = () => {
                 'Content-Type': 'application/json',
                 'Authorization': `Token ${token}`
               }
-            axios.post("http://localhost:8000/api/v2/leaderboard/score", {
+            axios.post("https://gamee-backend.herokuapp.com/api/v2/leaderboard/score", {
                 score: iframeData.score,
                 game: "Boat Rush"
             }, {headers: headers})
